@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form,div{
+            text-align: center;
+        }
+    </style>
+    <script src="../scripts/Common.js"></script>
+    <script>
+        function printData()
+        {
+            var textdata=$("Inp").value;
+            var lis=$("divid");
+            lis.innerHTML=textdata;
+             var   v=$("date").value
+            lis.innerHTML+=v;
+            var listval=$("sellist").value
+            lis.innerHTML+=listval
+            var radiao=$("radio").value
+            list.innerHTML+=radiao
+        }
+    </script>
+</head>
+<body>
+    <form  name="form1">
+       <p><input type="text" placeholder="Enter Name" id="Inp"></p>
+    </p>  <input type="date" placeholder="Enter Date of Birth" id="date"></p>
+    <p>    
+    <select id="sellist">
+            <option value="none">None</option>
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">Three</option>
+    </select></p>
+    <p> 
+    <input type="radio" id="rad"  value="radio">radio
+  
+    </p>
+    <p><input type="button"  onclick="printData()"> Click</button></p>
+    </form>
+    
+    
+    <div id="divid">
+        
+    </div>
+</body>
+</html>
